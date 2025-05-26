@@ -1,4 +1,6 @@
-const { defineConfig } = require('@vue/cli-service')
+const { defineConfig } = require("@vue/cli-service");
+const { publish } = require("gh-pages");
 module.exports = defineConfig({
-  transpileDependencies: true
-})
+  publicPath: `/test/`,
+  transpileDependencies: true,
+});
